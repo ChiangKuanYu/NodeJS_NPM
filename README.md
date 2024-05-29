@@ -1,4 +1,4 @@
-*NodeJS and NPM package practices.
+#NodeJS and NPM package practices.
 Using NPM inquirer to creat the questions and return the answers.
 User can choose to save the QR code img or text file.
 Creating the QR code image is using NPM qr-image, and save the text file is using NodeJS fs.writeFile.
