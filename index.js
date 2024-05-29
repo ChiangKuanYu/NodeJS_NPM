@@ -27,10 +27,10 @@ inquirer.prompt(questions).then((answers) => {
     if (answers.actionType === 'Save a QR code image.') {
         //寫法參照 NPM qr-image 資料
         var qr_img = qr.image(url);
-        qr_img.pipe(fs.createWriteStream('qr_img2.png'));
+        qr_img.pipe(fs.createWriteStream('qr_img.png'));
 
     } else if (answers.actionType === 'Save a txt file.') {
-        fs.writeFile("URL2.txt", url, (err) => {
+        fs.writeFile("URL.txt", url, (err) => {
             if (err) throw err;
             console.log("The file has been saved!");
           });
