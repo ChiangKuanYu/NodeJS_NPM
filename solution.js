@@ -10,9 +10,10 @@ inquirer
     },
   ])
   .then((answers) => {
+    console.log(answers);
     const url = answers.URL;
     var qr_svg = qr.image(url);
-    qr_svg.pipe(fs.createWriteStream("qr_img.png"));
+    qr_svg.pipe(fs.createWriteStream("qr_img2.png"));
 
     fs.writeFile("URL.txt", url, (err) => {
       if (err) throw err;
